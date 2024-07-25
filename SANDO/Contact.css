@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900;&display=swap');
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Work Sans', sans-serif;
+}
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(hang.jpg);
+    background-size: cover;
+}
+.contact .content{
+    max-width: 800px;
+    text-align: center;
+    margin-bottom: auto;
+}
+.contact .content h2{
+    font-size: 2.8em;
+    font-weight: 650;
+    color: rgb(0, 0, 0);
+}
+.contact .content p{
+    font-size: 0.9em;
+    font-weight: 400;
+    color: rgb(41, 41, 41);
+}
+.boxs
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.boxs .contactInfo
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.boxs .contactInfo .box
+{
+    position: relative;
+    padding: 20px;
+    display: flex;
+}
+.boxs .contactInfo .box .icon 
+{
+    min-width: 60px;
+    height: 60px;
+    background:rgb(202, 200, 200);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.boxs .contactInfo .box .text
+{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: rgb(59, 53, 53);
+    flex-direction: column;
+    font-weight: 650;
+}
+.boxs .contactInfo .box .text h3
+{
+    font-weight: 650;
+    color:darkslategray;    
+}
+.contactForm
+{
+    width: 40%;
+    padding: 40px;
+    background:white;
+}
+.contactForm h2 
+{
+    font-size: 30px;
+    color:#333;
+    font-weight: 650;
+}
+.contactForm .inputBox
+{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea
+{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.contactForm .inputBox span
+{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span
+{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.contactForm .inputBox input [type="submit"]
+{
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;   
+    padding: 10px;
+    font-size: 18px; 
+}
+
+@media (max-width: 991px)
+{
+    .contact
+    {
+        padding: 50px;
+    }
+    .boxs
+    {
+        flex-direction: column;
+    }
+    .boxs .contactInfo
+    {
+        margin-bottom: 40px;
+    }
+    .boxs .contactInfo
+    {
+        width: 100px;
+    }
+}
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+body{
+  margin: 0;
+  background: rgb(255, 255, 255);
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+}
+
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+
+header{
+  background: rgb(80, 77, 77);
+}
+
+header ::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  padding: 10px 0 ;
+}
+
+nav{
+  float: right;
+  
+}
+
+nav ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+}
+nav li{
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+
+  position: relative;
+}
+nav a{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+
+}
+nav a :hover{
+  color: rgb(255, 255, 255);
+
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: rgb(255, 255, 255);
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
